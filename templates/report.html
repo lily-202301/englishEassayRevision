@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>English Essay Analysis Report</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: "WenQuanYi Micro Hei", "Microsoft YaHei", "SimSun", sans-serif;
+            line-height: 1.6;
+            color: #333;
+            padding: 40px;
+            background-color: #fff;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            width: 100%;
+        }
+        
+        h1 {
+            font-family: "WenQuanYi Micro Hei", "Microsoft YaHei", "SimSun", sans-serif;
+            color: #2c3e50;
+            border-bottom: 3px solid #3498db;
+            padding-bottom: 10px;
+            margin-bottom: 30px;
+            font-size: 28px;
+        }
+        
+        h2 {
+            font-family: "WenQuanYi Micro Hei", "Microsoft YaHei", "SimSun", sans-serif;
+            color: #34495e;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            font-size: 20px;
+            border-left: 4px solid #3498db;
+            padding-left: 10px;
+        }
+        
+        .section {
+            margin-bottom: 40px;
+            padding: 20px;
+            background-color: #f8f9fa;
+            border-radius: 5px;
+        }
+        
+        .original-text {
+            background-color: #fff;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+        }
+        
+        .error {
+            background-color: #ffebee;
+            color: #c62828;
+            text-decoration: underline;
+            text-decoration-color: #c62828;
+            text-decoration-thickness: 2px;
+            padding: 2px 0;
+            font-weight: 500;
+        }
+        
+        .analysis-item {
+            background-color: #fff;
+            padding: 15px;
+            margin-bottom: 15px;
+            border-left: 3px solid #3498db;
+            border-radius: 3px;
+        }
+        
+        .analysis-item h3 {
+            color: #2c3e50;
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+        
+        .original-sentence {
+            font-style: italic;
+            color: #555;
+            margin-bottom: 8px;
+        }
+        
+        .error-info {
+            color: #c62828;
+            margin: 8px 0;
+            padding: 8px;
+            background-color: #ffebee;
+            border-radius: 3px;
+        }
+        
+        .correction {
+            color: #2e7d32;
+            margin: 8px 0;
+            padding: 8px;
+            background-color: #e8f5e9;
+            border-radius: 3px;
+        }
+        
+        .suggestion {
+            color: #1565c0;
+            margin: 8px 0;
+            padding: 8px;
+            background-color: #e3f2fd;
+            border-radius: 3px;
+            font-style: italic;
+        }
+        
+        .polished-text {
+            background-color: #fff;
+            padding: 20px;
+            border: 1px solid #4caf50;
+            border-radius: 5px;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+            line-height: 1.8;
+        }
+        
+        .goal-analysis {
+            background-color: #fff;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            line-height: 1.8;
+        }
+        
+        .label {
+            font-weight: bold;
+            color: #2c3e50;
+            display: inline-block;
+            margin-right: 8px;
+        }
+        
+        /* Sentence Analysis Table Styles */
+        .analysis-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            /* box-shadow may not render well in WeasyPrint, using border instead */
+        }
+        
+        .analysis-table thead {
+            background-color: #3498db;
+            color: #fff;
+        }
+        
+        .analysis-table th {
+            font-family: "WenQuanYi Micro Hei", "Microsoft YaHei", "SimSun", sans-serif;
+            padding: 12px;
+            text-align: left;
+            font-weight: bold;
+            border-bottom: 2px solid #2980b9;
+        }
+        
+        .analysis-table td {
+            font-family: "WenQuanYi Micro Hei", "Microsoft YaHei", "SimSun", sans-serif;
+            padding: 12px;
+            border-bottom: 1px solid #e0e0e0;
+            vertical-align: top;
+        }
+        
+        /* Remove hover effect for PDF compatibility - WeasyPrint doesn't support :hover */
+        /* .analysis-table tbody tr:hover {
+            background-color: #f5f5f5;
+        } */
+        
+        .analysis-table tbody tr:last-child td {
+            border-bottom: none;
+        }
+        
+        .col-index {
+            width: 40px;
+            text-align: center;
+            font-weight: bold;
+            color: #7f8c8d;
+        }
+        
+        .col-original {
+            width: 30%;
+        }
+        
+        .col-correction {
+            width: 30%;
+        }
+        
+        .col-explanation {
+            width: 40%;
+        }
+        
+        .original-text-cell {
+            font-style: italic;
+            color: #555;
+            margin-bottom: 8px;
+            line-height: 1.5;
+        }
+        
+        .error-badge {
+            display: inline-block;
+            background-color: #ffebee;
+            color: #c62828;
+            padding: 4px 8px;
+            border-radius: 3px;
+            font-size: 0.85em;
+            margin-top: 6px;
+            font-weight: 500;
+        }
+        
+        .correction-text-cell {
+            color: #2e7d32;
+            background-color: #e8f5e9;
+            padding: 8px;
+            border-radius: 3px;
+            line-height: 1.5;
+        }
+        
+        .explanation-text-cell {
+            color: #1565c0;
+            background-color: #e3f2fd;
+            padding: 8px;
+            border-radius: 3px;
+            line-height: 1.5;
+            font-size: 0.95em;
+        }
+        
+        .no-correction,
+        .no-explanation {
+            color: #999;
+            font-style: italic;
+        }
+        
+        @media print {
+            body {
+                padding: 20px;
+            }
+            
+            .section {
+                page-break-inside: avoid;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>English Essay Analysis Report</h1>
+        
+        <!-- Writing Goal Analysis Section -->
+        <div class="section">
+            <h2>Writing Goal Analysis</h2>
+            <div class="goal-analysis">
+                {{ writing_goal_analysis }}
+            </div>
+        </div>
+        
+        <!-- Original Text with Annotations -->
+        <div class="section">
+            <h2>Original Text (with Error Highlights)</h2>
+            <div class="original-text">
+                {{ annotated_html | safe }}
+            </div>
+        </div>
+        
+        <!-- Sentence-Level Analysis -->
+        <div class="section">
+            <h2>Sentence-Level Analysis</h2>
+            <table class="analysis-table">
+                <thead>
+                    <tr>
+                        <th class="col-index">#</th>
+                        <th class="col-original">Original</th>
+                        <th class="col-correction">Correction</th>
+                        <th class="col-explanation">Explanation</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for analysis in sentence_analysis %}
+                    <tr>
+                        <td class="col-index">{{ loop.index }}</td>
+                        <td class="col-original">
+                            <div class="original-text-cell">{{ analysis.original }}</div>
+                            {% if analysis.error %}
+                            <div class="error-badge">Error: {{ analysis.error }}</div>
+                            {% endif %}
+                        </td>
+                        <td class="col-correction">
+                            {% if analysis.correction %}
+                            <div class="correction-text-cell">{{ analysis.correction }}</div>
+                            {% else %}
+                            <span class="no-correction">—</span>
+                            {% endif %}
+                        </td>
+                        <td class="col-explanation">
+                            {% if analysis.suggestion %}
+                            <div class="explanation-text-cell">{{ analysis.suggestion }}</div>
+                            {% else %}
+                            <span class="no-explanation">—</span>
+                            {% endif %}
+                        </td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+        
+        <!-- Polished Version -->
+        <div class="section">
+            <h2>Polished Version</h2>
+            <div class="polished-text">
+                {{ polished_version }}
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
