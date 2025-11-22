@@ -1,0 +1,12 @@
+fastapi
+uvicorn[standard]
+sqlalchemy
+openai
+python-dotenv
+pydantic
+passlib[bcrypt]
+# 必须指定这个版本，否则会报 AttributeError: module 'bcrypt' has no attribute '__about__'
+bcrypt==4.0.1
+python-jose[cryptography]
+python-multipart
+celery[redis]

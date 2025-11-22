@@ -1,0 +1,41 @@
+version: '3.8'
+
+services:
+  # 1. Web 服务 (FastAPI)
+  web:
+    build: ./backend
+    command: uvicorn app.main:app --host 0.0.0.0 --port 8000
+    volumes:
+      - ./backend:/app
+    ports:
+      - "8000:8000"
+    env_file:
+      - ./backend/.env
+    environment:
+      - CELERY_BROKER_URL=redis://redis:6379/0
+      - CELERY_RESULT_BACKEND=redis://redis:6379/0
+      # 切换到 PostgreSQL (Day 3 高级挑战，这里为了演示简单暂时还用 SQLite，但在 Docker 里 SQLite 不持久，生产环境必换)
+      - DATABASE_URL=sqlite:///./sql_app.db 
+    depends_on:
+      - redis
+
+  # 2. Worker 服务 (Celery)
+  worker:
+    build: ./backend
+    # 启动命令变成了启动 Celery
+    command: celery -A app.worker.celery_app worker --loglevel=info
+    volumes:
+      - ./backend:/app
+    env_file:
+      - ./backend/.env
+    environment:
+      - CELERY_BROKER_URL=redis://redis:6379/0
+      - CELERY_RESULT_BACKEND=redis://redis:6379/0
+    depends_on:
+      - redis
+
+  # 3. Redis (消息队列)
+  redis:
+    image: "redis:alpine"
+    ports:
+      - "6379:6379"
