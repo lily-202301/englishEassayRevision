@@ -1,0 +1,235 @@
+{
+  "original_text": "We sat down next to each other, but David wouldn't look at me. David clapped his hands and encourage other children. I looked at him who was smile but his eyes were filled with disappointment. A flash of frustration swept over me. At that time, I make an determination \"I will help the pitiful child.\" I told him \"David, you are very hard and I believe you could finish this event. I wish you can believe yourself.\" David nodded his head and his eyes were filled with hapeness. David and I come back to the starting. I gave David a hug with tightly.\n\nI watched as David moved up to the starting line with the other runners. David has a deep breath and clench his fists. I know his strong determination. As the starting signal sounded, all the",
+  "overall_evaluation": {
+    "tier": "第三档",
+    "total_score": "15/25",
+    "brief_comment": "作文基本切题，情节连贯，但存在较多语法错误和表达不准确之处，语言表达较为简单，部分句子结构混乱，影响整体流畅性。",
+    "score_breakdown": {
+      "relevance": "4/5",
+      "grammar_vocab": "3/5",
+      "logic_structure": "4/5",
+      "content": "4/5"
+    }
+  },
+  "highlights": {
+    "content": [
+      {
+        "point": "情感描写真实",
+        "evidence": "通过描述David的失望眼神和作者内心的挫败感，展现了人物心理变化。"
+      },
+      {
+        "point": "情节发展合理",
+        "evidence": "从劝说David参赛到最终出发，逻辑清晰，符合事件发展顺序。"
+      }
+    ],
+    "language": [
+      {
+        "point": "使用了生动的动词",
+        "evidence": "如'clapped his hands', 'filled with disappointment', 'clench his fists'等，增强了画面感。"
+      },
+      {
+        "point": "尝试使用复杂句式",
+        "evidence": "如'I make an determination...I will help the pitiful child.'虽有语法问题，但体现了学生对表达意图的追求。"
+      }
+    ],
+    "structure": [
+      {
+        "point": "段落衔接自然",
+        "description": "两段之间通过时间推进和动作转换实现自然过渡，保持了叙事的连贯性。"
+      }
+    ]
+  },
+  "improvements": {
+    "content": [
+      {
+        "point": "细节描写可更丰富",
+        "description": "可以增加对环境、其他人物反应或内心独白的描写，使故事更具感染力。"
+      }
+    ],
+    "language": [
+      {
+        "point": "语法错误较多",
+        "evidence": "如'encourage'应为'encouraged', 'make an determination'应为'made a determination', 'hapeness'应为'happiness'等。"
+      },
+      {
+        "point": "词汇使用不够准确",
+        "evidence": "如'pitiful child'略显贬义，可用'brave boy'或'determined runner'替代；'very hard'应为'very hard-working'。"
+      }
+    ],
+    "structure": [
+      {
+        "point": "结尾略显仓促",
+        "description": "最后一句未完成，缺乏收尾，建议补充比赛结果或情感升华。"
+      }
+    ]
+  },
+  "error_summary": {
+    "grammar": [
+      "时态错误",
+      "冠词误用",
+      "主谓一致错误",
+      "动词形式错误"
+    ],
+    "spelling": [
+      "hapeness → happiness",
+      "determination → determination（拼写正确但搭配错误）",
+      "tightly → tight"
+    ],
+    "structure": [
+      "句子结构混乱",
+      "缺少连接词导致语义断裂"
+    ]
+  },
+  "detailed_errors": [
+    {
+      "id": 1,
+      "type": "动词时态错误",
+      "original_sentence": "David clapped his hands and encourage other children.",
+      "correction": "David clapped his hands and encouraged other children.",
+      "explanation": "and连接两个并列谓语，前后时态需一致，'clapped'是过去式，'encourage'应改为'encouraged'。",
+      "advanced_suggestion": "David clapped his hands and cheered for the other children."
+    },
+    {
+      "id": 2,
+      "type": "代词指代不清",
+      "original_sentence": "I looked at him who was smile but his eyes were filled with disappointment.",
+      "correction": "I looked at him, who was smiling, but his eyes were filled with disappointment.",
+      "explanation": "'who was smile'语法错误，应为'was smiling'；逗号缺失导致句子结构混乱。",
+      "advanced_suggestion": "I looked at him—his lips curved into a smile, yet his eyes betrayed a deep sense of disappointment."
+    },
+    {
+      "id": 3,
+      "type": "冠词与名词搭配错误",
+      "original_sentence": "I make an determination",
+      "correction": "I made a determination",
+      "explanation": "make应为过去式made；'an'用于元音前，'determination'以辅音开头，应使用'a'。",
+      "advanced_suggestion": "I made up my mind to support him."
+    },
+    {
+      "id": 4,
+      "type": "形容词误用",
+      "original_sentence": "you are very hard",
+      "correction": "you are very hard-working",
+      "explanation": "hard是副词，不能直接修饰人；应使用形容词'hard-working'表示‘努力的’。",
+      "advanced_suggestion": "you are incredibly determined and strong-willed"
+    },
+    {
+      "id": 5,
+      "type": "拼写错误",
+      "original_sentence": "his eyes were filled with hapeness",
+      "correction": "his eyes were filled with happiness",
+      "explanation": "hapeness是错误拼写，正确形式为'happiness'。",
+      "advanced_suggestion": "his eyes sparkled with joy and hope"
+    },
+    {
+      "id": 6,
+      "type": "主谓一致错误",
+      "original_sentence": "David and I come back to the starting",
+      "correction": "David and I came back to the starting line",
+      "explanation": "come应为过去式came；'starting'后缺名词'line'。",
+      "advanced_suggestion": "David and I walked back together to the starting line."
+    },
+    {
+      "id": 7,
+      "type": "介词搭配错误",
+      "original_sentence": "I gave David a hug with tightly",
+      "correction": "I gave David a tight hug",
+      "explanation": "with tightly语法错误，'tightly'是副词，不能作宾语补足语；应使用形容词'tight'修饰'hug'。",
+      "advanced_suggestion": "I pulled him into a firm embrace, offering silent encouragement."
+    },
+    {
+      "id": 8,
+      "type": "动词形式错误",
+      "original_sentence": "David has a deep breath and clench his fists",
+      "correction": "David took a deep breath and clenched his fists",
+      "explanation": "has应为took，clench应为clenched，保持时态一致。",
+      "advanced_suggestion": "David drew in a deep breath, his fists tightening with resolve."
+    }
+  ],
+  "optimizations": [
+    {
+      "id": 1,
+      "type": "表达升格",
+      "original_sentence": "David clapped his hands and encourage other children.",
+      "correction": "David clapped his hands and cheered for the other children.",
+      "explanation": "将'encourage'替换为更自然的'cheered for'，增强场景感。"
+    },
+    {
+      "id": 2,
+      "type": "情感深化",
+      "original_sentence": "A flash of frustration swept over me.",
+      "correction": "A wave of frustration washed over me, followed by a surge of determination.",
+      "explanation": "加入对比情绪，使心理描写更立体。"
+    },
+    {
+      "id": 3,
+      "type": "语言润色",
+      "original_sentence": "I know his strong determination.",
+      "correction": "I could feel the strength of his resolve in every breath he took.",
+      "explanation": "使用感官描写增强感染力。"
+    }
+  ],
+  "paragraph_reviews": [
+    {
+      "paragraph_index": 1,
+      "summary": "第一段描述了作者与David的互动，试图鼓励他参赛，情感真挚，但存在多处语法错误。",
+      "issues": "主要问题包括动词时态错误、冠词误用、拼写错误和句子结构混乱。",
+      "specific_corrections": [
+        {
+          "wrong": "encourage",
+          "right": "encouraged"
+        },
+        {
+          "wrong": "make an determination",
+          "right": "made a determination"
+        },
+        {
+          "wrong": "hapeness",
+          "right": "happiness"
+        },
+        {
+          "wrong": "come back",
+          "right": "came back"
+        }
+      ]
+    },
+    {
+      "paragraph_index": 2,
+      "summary": "第二段描写David准备起跑的过程，动作描写生动，但结尾不完整，影响整体效果。",
+      "issues": "动词时态错误、主谓一致问题，且句子未完成。",
+      "specific_corrections": [
+        {
+          "wrong": "has a deep breath",
+          "right": "took a deep breath"
+        },
+        {
+          "wrong": "clench his fists",
+          "right": "clenched his fists"
+        },
+        {
+          "wrong": "all the",
+          "right": "runners surged forward"
+        }
+      ]
+    }
+  ],
+  "material_reuse_guide": {
+    "applicable_themes": [
+      {
+        "theme": "坚持与勇气",
+        "description": "可拓展为关于克服困难、自我挑战的故事，适用于励志类话题。"
+      },
+      {
+        "theme": "师生关系",
+        "description": "可强调教师对学生心理支持的重要性，适用于教育主题写作。"
+      },
+      {
+        "theme": "团队精神",
+        "description": "可延伸至集体活动中的包容与鼓励，适用于合作类话题。"
+      }
+    ],
+    "processing_direction": "可将此材料转化为记叙文、议论文或演讲稿，重点突出情感变化与成长主题。",
+    "expansion_ideas": "添加比赛过程描写、观众反应、David最终完赛后的喜悦，或反思如何帮助他人建立自信。"
+  },
+  "revised_text": "We sat down next to each other, but David wouldn't look at me. He clapped his hands and cheered for the other children. I looked at him—his lips curved into a smile, yet his eyes betrayed a deep sense of disappointment. A wave of frustration washed over me, followed by a surge of determination. I made up my mind: I would help this brave boy. I said, 'David, you are incredibly hard-working, and I believe you can finish this race. I wish you could believe in yourself.' David nodded slowly, and his eyes sparkled with joy and hope. Together, we walked back to the starting line. I pulled him into a firm embrace, offering silent encouragement.\n\nI watched as David moved up to the starting line with the other runners. He took a deep breath, his fists tightening with resolve. I could feel the strength of his determination in every breath he took. As the starting signal sounded, all the runners surged forward, and David began his journey—not just across the forest path, but toward a new belief in himself."
+}

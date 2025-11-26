@@ -1,0 +1,196 @@
+{
+  "original_text": "We sat down next to each other, but David wouldn't look at me. He lowered his head what he was thinking. I had high hopes for him so I wanted to let him join the cross-country. I comforted him in a soothing voice, \"you have work so hard for this event. I hope your work hard is rewarding, I will support you forever.\" My words like a warm stream rushed his being. David raised his eyes meet my eyes with his eyes sparkling with confident. David felt inspired. I was pleased beyond description that I can light his strong determination. David was thinking for a while, \"I hope I can try it.\" He laughed, his eyes shining with excitement. I pulled him into my arms, \"I believe you can do it.\" I watched as David moved up to the starting line with the other runners. But David still had butterflies in his stomach and his hands were sweaty. With starting competition. So nervous was him that he was slow.",
+  "overall_evaluation": {
+    "tier": "第三档",
+    "total_score": "15/25",
+    "brief_comment": "作文基本切题，表达了鼓励与支持的情感，语言表达尚可但存在较多语法和拼写错误，逻辑结构不够流畅，部分内容重复。",
+    "score_breakdown": {
+      "relevance": "4/5",
+      "grammar_vocab": "3/5",
+      "logic_structure": "3/5",
+      "content": "4/5"
+    }
+  },
+  "highlights": {
+    "content": [
+      {
+        "point": "情感真挚，展现了师生之间的信任与鼓励",
+        "evidence": "I pulled him into my arms, 'I believe you can do it.'"
+      }
+    ],
+    "language": [
+      {
+        "point": "使用了比喻修辞增强表达效果",
+        "evidence": "My words like a warm stream rushed his being."
+      }
+    ],
+    "structure": [
+      {
+        "point": "段落划分清晰，有起承转合的意识",
+        "description": "从对话到心理描写再到比赛前的状态，有一定的叙事节奏。"
+      }
+    ]
+  },
+  "improvements": {
+    "content": [
+      {
+        "point": "内容略显重复，缺乏细节描写",
+        "description": "如‘David felt inspired’后未进一步展开其内心变化或动作反应。"
+      }
+    ],
+    "language": [
+      {
+        "point": "语法错误较多，影响理解",
+        "evidence": "He lowered his head what he was thinking"（缺少连接词）"
+      }
+    ],
+    "structure": [
+      {
+        "point": "句子衔接不自然，逻辑跳跃明显",
+        "description": "例如从‘I was pleased beyond description’直接跳到‘David was thinking for a while’，缺乏过渡。"
+      }
+    ]
+  },
+  "error_summary": {
+    "grammar": [
+      "主谓一致错误",
+      "冠词缺失",
+      "动词时态混乱",
+      "句子结构不完整"
+    ],
+    "spelling": [
+      "confident → confidence",
+      "work → worked",
+      "so nervous was him → so nervous was he"
+    ],
+    "structure": [
+      "句子碎片化",
+      "标点使用不当",
+      "逻辑顺序混乱"
+    ]
+  },
+  "detailed_errors": [
+    {
+      "id": 1,
+      "type": "语法错误",
+      "original_sentence": "He lowered his head what he was thinking.",
+      "correction": "He lowered his head, wondering what he was thinking.",
+      "explanation": "原句缺少连接词，导致句子不完整。应添加现在分词作伴随状语。",
+      "advanced_suggestion": "He bowed his head, lost in thought about whether he should run."
+    },
+    {
+      "id": 2,
+      "type": "词汇错误",
+      "original_sentence": "you have work so hard for this event.",
+      "correction": "you have worked so hard for this event.",
+      "explanation": "have 后接过去分词构成现在完成时。",
+      "advanced_suggestion": "you've trained tirelessly for this moment."
+    },
+    {
+      "id": 3,
+      "type": "语法错误",
+      "original_sentence": "I hope your work hard is rewarding",
+      "correction": "I hope all your hard work will be rewarded.",
+      "explanation": "work hard 是短语，不能作名词；应改为名词性表达。",
+      "advanced_suggestion": "I know your dedication will pay off."
+    },
+    {
+      "id": 4,
+      "type": "拼写错误",
+      "original_sentence": "with his eyes sparkling with confident",
+      "correction": "with his eyes sparkling with confidence",
+      "explanation": "confident 是形容词，此处需用名词形式 confidence。",
+      "advanced_suggestion": "his eyes gleamed with unwavering confidence."
+    },
+    {
+      "id": 5,
+      "type": "语法错误",
+      "original_sentence": "So nervous was him that he was slow.",
+      "correction": "So nervous was he that he started slowly.",
+      "explanation": "倒装句中主语应为 he，而非 him。",
+      "advanced_suggestion": "Trembling with anxiety, he took his first steps hesitantly."
+    },
+    {
+      "id": 6,
+      "type": "标点错误",
+      "original_sentence": "With starting competition.",
+      "correction": "With the start of the competition.",
+      "explanation": "介词短语不完整，缺少冠词和名词。",
+      "advanced_suggestion": "As the starting gun fired, the race began."
+    }
+  ],
+  "optimizations": [
+    {
+      "id": 1,
+      "type": "表达升格",
+      "original_sentence": "My words like a warm stream rushed his being.",
+      "correction": "My words flowed like a warm stream, touching his soul.",
+      "explanation": "增加动词和修饰语，使比喻更生动形象。"
+    },
+    {
+      "id": 2,
+      "type": "表达升格",
+      "original_sentence": "I was pleased beyond description that I can light his strong determination.",
+      "correction": "I was overwhelmed with joy, knowing I had ignited his inner strength.",
+      "explanation": "使用更高级的词汇和结构提升文采。"
+    },
+    {
+      "id": 3,
+      "type": "表达升格",
+      "original_sentence": "But David still had butterflies in his stomach and his hands were sweaty.",
+      "correction": "Yet David’s heart pounded with anticipation, his palms slick with sweat.",
+      "explanation": "用更具体的感官描写增强画面感。"
+    }
+  ],
+  "paragraph_reviews": [
+    {
+      "paragraph_index": 1,
+      "summary": "描述作者与大卫的对话及心理活动，情感真挚。",
+      "issues": "句子结构松散，多处语法错误影响阅读流畅性。",
+      "specific_corrections": [
+        {
+          "wrong": "He lowered his head what he was thinking",
+          "right": "He lowered his head, wondering what he was thinking"
+        },
+        {
+          "wrong": "you have work so hard",
+          "right": "you have worked so hard"
+        }
+      ]
+    },
+    {
+      "paragraph_index": 2,
+      "summary": "描写大卫的心理转变和准备参赛的过程。",
+      "issues": "逻辑跳跃大，缺乏过渡句；结尾句语法错误严重。",
+      "specific_corrections": [
+        {
+          "wrong": "So nervous was him that he was slow",
+          "right": "So nervous was he that he started slowly"
+        },
+        {
+          "wrong": "With starting competition",
+          "right": "As the race began"
+        }
+      ]
+    }
+  ],
+  "material_reuse_guide": {
+    "applicable_themes": [
+      {
+        "theme": "坚持与勇气",
+        "description": "可扩展为关于克服困难、挑战自我的主题文章。"
+      },
+      {
+        "theme": "师生关系",
+        "description": "可用于探讨教育中的情感支持与激励作用。"
+      },
+      {
+        "theme": "自我突破",
+        "description": "适合用于励志类演讲或议论文素材。"
+      }
+    ],
+    "processing_direction": "可将此材料转化为记叙文、议论文或演讲稿，突出‘信念的力量’这一核心主题。",
+    "expansion_ideas": "加入更多细节描写，如大卫训练的场景、其他同学的反应、比赛后的结果等，丰富故事层次。"
+  },
+  "revised_text": "We sat down next to each other, but David wouldn’t look at me. He lowered his head, lost in thought. I had high hopes for him, so I wanted to encourage him to join the cross-country team. In a soothing voice, I said, 'You’ve worked so hard for this event. I hope all your effort will be rewarded, and I’ll always support you.' My words flowed like a warm stream, touching his soul. David raised his eyes to meet mine, his gaze sparkling with confidence. He felt inspired. I was overwhelmed with joy, knowing I had ignited his inner strength.\n\nAfter a moment of silence, David whispered, 'I hope I can try it.' A smile broke across his face, his eyes shining with excitement. I pulled him into my arms and whispered, 'I believe you can do it.' As he moved to the starting line with the other runners, his heart pounded with anticipation. His hands were sweaty, and his breath came quickly. So nervous was he that he started slowly, but his determination never wavered. The race had begun, and David was ready to prove himself."
+}
