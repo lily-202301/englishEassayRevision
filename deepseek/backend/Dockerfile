@@ -9,8 +9,8 @@ COPY requirements.txt .
 
 # 4. 安装依赖
 # --no-cache-dir 减小镜像体积
-RUN pip install --no-cache-dir -r requirements.txt
-
+# RUN pip install --no-cache-dir -r requirements.txt
+RUN pip install --no-cache-dir -r requirements.txt -i https://pypi.tuna.tsinghua.edu.cn/simple
 # 5. 复制所有代码
 COPY . .
 

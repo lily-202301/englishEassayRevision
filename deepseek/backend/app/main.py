@@ -2,14 +2,22 @@ from fastapi import FastAPI, Depends, HTTPException
 from sqlalchemy.orm import Session
 from fastapi.security import OAuth2PasswordRequestForm
 from jose import JWTError, jwt
-from .app import models, schemas, database, service, auth,worker
+from . import models, schemas, database, service, auth,worker
 import logging
 from typing import List
+from fastapi.middleware.cors import CORSMiddleware
 # 1. 创建数据库表
 models.Base.metadata.create_all(bind=database.engine)
 
 app = FastAPI()
 
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],  # 允许所有来源（生产环境建议改成具体域名）
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 # 获取数据库会话的工具函数
 def get_db():
     db = database.SessionLocal()

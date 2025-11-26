@@ -1,0 +1,256 @@
+{
+  "original_text": "We sat down next to each other, but David wouldn't look at me. He lowered his head what he was thinking. I had high hopes for him so I wanted to let him join the cross-country. I comforted him in a soothing voice, \"you have work so hard for this event. I hope your work hard is rewarding, I will support you forever.\" My words like a warm stream rushed his being. David raised his eyes meet my eyes with his eyes sparkling with confident. David felt inspired. I was pleased beyond description that I can light his strong determination. David was thinking for a while, \"I hope I can try it.\" He laughed, his eyes shining with excitement. I pulled him into my arms, \"I believe you can do it.\" I watched as David moved up to the starting line with the other runners. But David still had butterflies in his stomach and his hands were sweaty. With starting competition. So nervous was him that he was slow. I waved my arms. \"You're best, you can make it, your efforts will pay off in the end. David's classmates still encouraged him warmly. David gradually lost his nervous and rushed to the end line. Eventually, David finished this competition and got the first prize. His classmates burst into thunderous applause. He was too excited to utter a word, tears of excitement blurring his eyes. My heart was glowing with happiness, \"Congratulations! you beat your fear.\" Applause is in the air. Determination is what it takes to conquer a fear and accomplish goal.",
+  "overall_evaluation": {
+    "tier": "第三档",
+    "total_score": "17/25",
+    "brief_comment": "文章内容完整，情感真挚，基本符合题意。语言表达尚可，但存在较多语法错误和用词不当，影响整体流畅性与准确性。",
+    "score_breakdown": {
+      "relevance": "4/5",
+      "grammar_vocab": "3/5",
+      "logic_structure": "4/5",
+      "content": "4/5"
+    }
+  },
+  "highlights": {
+    "content": [
+      {
+        "point": "情感描写细腻，展现了师生之间的信任与鼓励",
+        "evidence": "I pulled him into my arms, 'I believe you can do it.'"
+      },
+      {
+        "point": "结尾升华主题，强调坚持与勇气的重要性",
+        "evidence": "Determination is what it takes to conquer a fear and accomplish goal."
+      }
+    ],
+    "language": [
+      {
+        "point": "使用了比喻修辞增强感染力",
+        "evidence": "My words like a warm stream rushed his being."
+      },
+      {
+        "point": "部分词汇选择恰当，如'glowing with happiness', 'tears of excitement'",
+        "evidence": "My heart was glowing with happiness... tears of excitement blurring his eyes."
+      }
+    ],
+    "structure": [
+      {
+        "point": "段落清晰，情节发展自然",
+        "description": "从心理描写到行动激励，再到比赛过程与结果，结构完整，逻辑递进合理。"
+      }
+    ]
+  },
+  "improvements": {
+    "content": [
+      {
+        "point": "细节描写可进一步丰富",
+        "description": "例如可以加入更多关于David身体状况的描述或环境氛围的渲染，使画面更立体。"
+      }
+    ],
+    "language": [
+      {
+        "point": "语法错误较多，影响表达准确性",
+        "evidence": "He lowered his head what he was thinking. → 缺少连接词；your work hard is rewarding → 主谓不一致。"
+      },
+      {
+        "point": "部分表达不够地道",
+        "evidence": "With starting competition → 应为At the start of the competition；so nervous was him → 倒装结构错误。"
+      }
+    ],
+    "structure": [
+      {
+        "point": "过渡略显生硬",
+        "description": "如从‘I pulled him into my arms’直接跳转到‘I watched as David moved up...’之间缺乏衔接句。"
+      }
+    ]
+  },
+  "error_summary": {
+    "grammar": [
+      "主谓不一致",
+      "冠词缺失",
+      "介词误用",
+      "倒装句错误",
+      "时态混乱"
+    ],
+    "spelling": [
+      "confident → confidence",
+      "nervous → nervousness",
+      "first prize → first place"
+    ],
+    "structure": [
+      "句子结构松散",
+      "逻辑连接不足",
+      "标点符号使用不当"
+    ]
+  },
+  "detailed_errors": [
+    {
+      "id": 1,
+      "type": "语法错误",
+      "original_sentence": "He lowered his head what he was thinking.",
+      "correction": "He lowered his head, wondering what he was thinking.",
+      "explanation": "原句缺少连接词，导致句子不完整。应添加现在分词作伴随状语。",
+      "advanced_suggestion": "He bowed his head, lost in thought about whether he should run."
+    },
+    {
+      "id": 2,
+      "type": "语法错误",
+      "original_sentence": "I had high hopes for him so I wanted to let him join the cross-country.",
+      "correction": "I had high hopes for him, so I wanted to encourage him to join the cross-country team.",
+      "explanation": "‘join the cross-country’不完整，应加team；‘let him join’语气较生硬，改为‘encourage’更自然。",
+      "advanced_suggestion": "I believed in his potential and hoped he would take part in the cross-country race."
+    },
+    {
+      "id": 3,
+      "type": "语法错误",
+      "original_sentence": "you have work so hard for this event.",
+      "correction": "you've worked so hard for this event.",
+      "explanation": "动词时态错误，应使用现在完成时。",
+      "advanced_suggestion": "you've put in so much effort preparing for this race."
+    },
+    {
+      "id": 4,
+      "type": "语法错误",
+      "original_sentence": "I hope your work hard is rewarding",
+      "correction": "I hope all your hard work will be rewarded.",
+      "explanation": "‘work hard’是动词短语，不能作主语；应改为名词形式‘hard work’。",
+      "advanced_suggestion": "I know your dedication will pay off in the end."
+    },
+    {
+      "id": 5,
+      "type": "拼写错误",
+      "original_sentence": "with his eyes sparkling with confident",
+      "correction": "with his eyes sparkling with confidence",
+      "explanation": "confident是形容词，此处需名词形式confidence。",
+      "advanced_suggestion": "his eyes lit up with unwavering confidence."
+    },
+    {
+      "id": 6,
+      "type": "语法错误",
+      "original_sentence": "So nervous was him that he was slow.",
+      "correction": "So nervous was he that he started slowly.",
+      "explanation": "倒装句中主语应为he，而非him；‘was slow’表达不清，应具体化。",
+      "advanced_suggestion": "Overwhelmed by nerves, he took off cautiously."
+    },
+    {
+      "id": 7,
+      "type": "语法错误",
+      "original_sentence": "With starting competition.",
+      "correction": "At the start of the competition",
+      "explanation": "介词搭配错误，应为‘at the start of’。",
+      "advanced_suggestion": "As the race began, the crowd erupted in cheers."
+    },
+    {
+      "id": 8,
+      "type": "语法错误",
+      "original_sentence": "David gradually lost his nervous and rushed to the end line.",
+      "correction": "David gradually overcame his nervousness and sprinted toward the finish line.",
+      "explanation": "‘nervous’是形容词，应改为名词‘nervousness’；‘rushed to the end line’不够准确，应为‘finish line’。",
+      "advanced_suggestion": "Driven by courage, he surged forward toward the finish line."
+    },
+    {
+      "id": 9,
+      "type": "语法错误",
+      "original_sentence": "Eventually, David finished this competition and got the first prize.",
+      "correction": "Eventually, David completed the race and won first place.",
+      "explanation": "‘got the first prize’口语化，正式写作中宜用‘won first place’；‘finished this competition’不如‘completed the race’自然。",
+      "advanced_suggestion": "Finally, David crossed the finish line, claiming first place."
+    },
+    {
+      "id": 10,
+      "type": "语法错误",
+      "original_sentence": "Applause is in the air.",
+      "correction": "The air was filled with applause.",
+      "explanation": "被动语态更符合英语习惯，且‘is in the air’不够地道。",
+      "advanced_suggestion": "A wave of cheers swept through the crowd."
+    }
+  ],
+  "optimizations": [
+    {
+      "id": 1,
+      "type": "表达升格",
+      "original_sentence": "My words like a warm stream rushed his being.",
+      "correction": "My words flowed like a warm stream, touching his soul.",
+      "explanation": "增加动词‘flowed’和宾语‘soul’，使比喻更完整、更具文学性。"
+    },
+    {
+      "id": 2,
+      "type": "表达升格",
+      "original_sentence": "I was pleased beyond description that I can light his strong determination.",
+      "correction": "I was overwhelmed with joy, knowing I had helped ignite his inner strength.",
+      "explanation": "避免‘light’的歧义，改用‘ignite’更贴切；‘inner strength’比‘strong determination’更富有表现力。"
+    },
+    {
+      "id": 3,
+      "type": "表达升格",
+      "original_sentence": "But David still had butterflies in his stomach and his hands were sweaty.",
+      "correction": "Yet David’s hands trembled with sweat, and butterflies fluttered in his stomach.",
+      "explanation": "调整语序，增强节奏感；‘fluttered’比‘had’更生动。"
+    }
+  ],
+  "paragraph_reviews": [
+    {
+      "paragraph_index": 1,
+      "summary": "描写David的心理状态及作者的安慰，情感真挚。",
+      "issues": "存在多处语法错误，如主谓不一致、冠词缺失等。",
+      "specific_corrections": [
+        {
+          "wrong": "He lowered his head what he was thinking.",
+          "right": "He lowered his head, wondering what he was thinking."
+        },
+        {
+          "wrong": "you have work so hard",
+          "right": "you've worked so hard"
+        }
+      ]
+    },
+    {
+      "paragraph_index": 2,
+      "summary": "描写比赛开始前的紧张氛围与鼓励场景。",
+      "issues": "‘With starting competition’语法错误严重；‘so nervous was him’倒装错误。",
+      "specific_corrections": [
+        {
+          "wrong": "With starting competition.",
+          "right": "At the start of the competition"
+        },
+        {
+          "wrong": "So nervous was him",
+          "right": "So nervous was he"
+        }
+      ]
+    },
+    {
+      "paragraph_index": 3,
+      "summary": "描写比赛过程与胜利结局，情绪高潮。",
+      "issues": "‘lost his nervous’应为‘overcame his nervousness’；‘got the first prize’不够正式。",
+      "specific_corrections": [
+        {
+          "wrong": "lost his nervous",
+          "right": "overcame his nervousness"
+        },
+        {
+          "wrong": "got the first prize",
+          "right": "won first place"
+        }
+      ]
+    }
+  ],
+  "material_reuse_guide": {
+    "applicable_themes": [
+      {
+        "theme": "克服恐惧",
+        "description": "通过David参加越野赛的故事，展现面对挑战时的心理变化与成长。"
+      },
+      {
+        "theme": "师生情谊",
+        "description": "教师的鼓励成为学生突破自我的关键动力，体现教育的力量。"
+      },
+      {
+        "theme": "坚持与毅力",
+        "description": "尽管身体受限，David仍坚持训练并最终成功，突出意志的重要性。"
+      }
+    ],
+    "processing_direction": "可将此素材用于议论文中作为论据，支持‘信念战胜困难’‘教育的影响’等主题。",
+    "expansion_ideas": "可扩展为：David如何在日常生活中克服障碍；其他同学如何看待他；未来他是否继续参与体育活动等。"
+  },
+  "revised_text": "We sat down next to each other, but David wouldn't look at me. He lowered his head, wondering what he was thinking. I had high hopes for him, so I wanted to encourage him to join the cross-country team. I comforted him in a soothing voice, 'You've worked so hard for this event. I hope all your efforts will be rewarded. I'll always support you.' My words flowed like a warm stream, touching his soul. David raised his eyes to meet mine, his gaze sparkling with confidence. He felt inspired. I was overwhelmed with joy, knowing I had helped ignite his inner strength.\n\nDavid paused for a moment, then said softly, 'I hope I can try it.' He smiled, his eyes shining with excitement. I pulled him into my arms and whispered, 'I believe you can do it.' As he moved to the starting line with the other runners, I noticed his hands trembling with sweat and butterflies fluttering in his stomach. At the start of the competition, so nervous was he that he took off slowly.\n\nI waved my arms, shouting, 'You're the best! You can make it! Your efforts will pay off!' David's classmates cheered him on warmly. Gradually, he overcame his nervousness and sprinted toward the finish line. Finally, David crossed the finish line, claiming first place. His classmates burst into thunderous applause. Overwhelmed with emotion, he couldn't speak—tears of joy blurring his vision. My heart glowed with happiness. 'Congratulations! You beat your fear!' I exclaimed. The air was filled with cheers. Determination is what it takes to conquer fear and achieve greatness."
+}

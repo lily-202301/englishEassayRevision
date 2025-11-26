@@ -1,0 +1,218 @@
+{
+  "original_text": "We sat down next to each other, but David wouldn't look at me. David towed his head, filling with badness and stared at track and field with a desiring eyes. I walked forward to him and patted his shoulder softly and said with a gentle tone, \"Why don't you try it? I know your grade and you are remarkable. I think you can try it and I believe you can finish it.\" David was surprised, showing his usual big toothy smile on his face when he heard my words. The instant, he decided to take part in this event, following his own heart although he couldn't take prize at last. Then, he signed up for this big cross-country run and walked toward the starting line with the other runners.\n\nI watched as David moved up to the starting line with the other runners. David's eyes were filled with confidence and light but fixed a frintament for this run. I called him with a loud voice and said to him with a strong voice, \"Come up! I believe that you can!\" The exciting competition stared. He ran hardly although other runners passed him a lot and he didn't give up. He ran with his sweats flowed from his face. At last, he finished this event and he walked toward me, hugging me with his eyes filled with appreciated tears. This experience made me and David that nothing is impossible, and we would never forget it.",
+  "overall_evaluation": {
+    "tier": "第三档",
+    "total_score": "15/25",
+    "brief_comment": "作文基本切题，表达了鼓励与坚持的主题，语言表达较为流畅但存在较多语法和拼写错误，影响了整体表达效果。",
+    "score_breakdown": {
+      "relevance": "4",
+      "grammar_vocab": "3",
+      "logic_structure": "4",
+      "content": "4"
+    }
+  },
+  "highlights": {
+    "content": [
+      {
+        "point": "主题明确，围绕鼓励与坚持展开",
+        "evidence": "通过描述David在他人鼓励下参与比赛并坚持到底的过程，体现了‘Nothing is impossible’的主题。"
+      }
+    ],
+    "language": [
+      {
+        "point": "使用了一些生动的描写",
+        "evidence": "如'big toothy smile', 'eyes filled with confidence and light'等表达增强了画面感。"
+      }
+    ],
+    "structure": [
+      {
+        "point": "段落结构清晰，有起承转合",
+        "description": "第一段描写心理变化与决定参赛，第二段描写比赛过程与结局，逻辑连贯。"
+      }
+    ]
+  },
+  "improvements": {
+    "content": [
+      {
+        "point": "可进一步深化情感描写",
+        "description": "例如增加对David内心挣扎或作者情感变化的细节，使人物更立体。"
+      }
+    ],
+    "language": [
+      {
+        "point": "需注意动词时态与主谓一致",
+        "evidence": "如'he ran hardly'应为'he ran hard'，'sweats flowed'应为'sweat flowed'。"
+      }
+    ],
+    "structure": [
+      {
+        "point": "结尾略显仓促",
+        "description": "可适当扩展感悟部分，提升文章深度。"
+      }
+    ]
+  },
+  "error_summary": {
+    "grammar": [
+      "时态错误",
+      "主谓不一致",
+      "冠词缺失",
+      "介词误用"
+    ],
+    "spelling": [
+      "towed → lowered",
+      "badness → sadness",
+      "desiring → desiring",
+      "frintament → firmament",
+      "appreciated → appreciative",
+      "stared → started"
+    ],
+    "structure": [
+      "句子冗长，缺乏断句",
+      "连接词使用不当"
+    ]
+  },
+  "detailed_errors": [
+    {
+      "id": 1,
+      "type": "拼写错误",
+      "original_sentence": "David towed his head",
+      "correction": "David lowered his head",
+      "explanation": "tow意为拖拽，不符合语境；lowered表示低头，更准确。",
+      "advanced_suggestion": "David bowed his head in quiet determination."
+    },
+    {
+      "id": 2,
+      "type": "语法错误",
+      "original_sentence": "filling with badness and stared at track and field with a desiring eyes",
+      "correction": "filled with sadness and stared at the track and field with longing eyes",
+      "explanation": "filling应为过去分词filled；badness应为sadness；desiring eyes应为longing eyes；track and field前需加定冠词the。",
+      "advanced_suggestion": "His eyes, brimming with quiet sorrow, lingered on the track, yearning for a chance to prove himself."
+    },
+    {
+      "id": 3,
+      "type": "语法错误",
+      "original_sentence": "Why don't you try it? I know your grade and you are remarkable.",
+      "correction": "Why don't you give it a try? I know your potential, and you're truly remarkable.",
+      "explanation": "your grade不准确，应为potential；and连接两个独立句子需逗号或改为复合句。",
+      "advanced_suggestion": "Why not give it a shot? I’ve seen your strength, and I know you’re capable of something extraordinary."
+    },
+    {
+      "id": 4,
+      "type": "拼写错误",
+      "original_sentence": "The instant, he decided to take part",
+      "correction": "Instantly, he decided to take part",
+      "explanation": "The instant是名词短语，此处应为副词instantly。",
+      "advanced_suggestion": "Without hesitation, he made up his mind to join."
+    },
+    {
+      "id": 5,
+      "type": "语法错误",
+      "original_sentence": "fixed a frintament for this run",
+      "correction": "fixed his gaze firmly on the finish line",
+      "explanation": "frintament是拼写错误，应为firmament（天穹），但语义不符；应改为gaze或focus。",
+      "advanced_suggestion": "his eyes locked onto the distant finish line with unwavering focus."
+    },
+    {
+      "id": 6,
+      "type": "语法错误",
+      "original_sentence": "He ran hardly although other runners passed him a lot",
+      "correction": "He ran hard, though many runners passed him",
+      "explanation": "hardly意为几乎不，应为hard（努力地）；passed him a lot表达不自然。",
+      "advanced_suggestion": "He pushed forward with every ounce of strength, even as others surged past him."
+    },
+    {
+      "id": 7,
+      "type": "语法错误",
+      "original_sentence": "he walked toward me, hugging me with his eyes filled with appreciated tears",
+      "correction": "he walked toward me, hugging me tightly, his eyes glistening with grateful tears",
+      "explanation": "appreciated tears不恰当，应为grateful或appreciative；hugging me with...结构混乱。",
+      "advanced_suggestion": "He embraced me fiercely, tears of gratitude streaming down his cheeks."
+    },
+    {
+      "id": 8,
+      "type": "语法错误",
+      "original_sentence": "This experience made me and David that nothing is impossible",
+      "correction": "This experience taught both of us that nothing is impossible",
+      "explanation": "made后缺少宾语补足语；me and David应为both of us；teach更符合语境。",
+      "advanced_suggestion": "It became a moment of truth for both of us—proof that perseverance can overcome any obstacle."
+    }
+  ],
+  "optimizations": [
+    {
+      "id": 1,
+      "type": "表达升格",
+      "original_sentence": "David was surprised, showing his usual big toothy smile on his face when he heard my words.",
+      "correction": "David’s face lit up instantly, his signature wide grin breaking through the clouds of doubt.",
+      "explanation": "使用lit up和breaking through增强画面感和情感张力。"
+    },
+    {
+      "id": 2,
+      "type": "表达升格",
+      "original_sentence": "He ran with his sweats flowed from his face.",
+      "correction": "Sweat poured down his face as he pressed on, refusing to yield.",
+      "explanation": "poured down比flowed更生动；pressed on体现坚持精神。"
+    },
+    {
+      "id": 3,
+      "type": "表达升格",
+      "original_sentence": "I called him with a loud voice and said to him with a strong voice",
+      "correction": "I shouted encouragement, my voice cutting through the crowd: 'You've got this!'",
+      "explanation": "避免重复voice；cutting through the crowd增强场景感。"
+    }
+  ],
+  "paragraph_reviews": [
+    {
+      "paragraph_index": 1,
+      "summary": "描述David因自卑而犹豫，作者鼓励他参赛，情节合理，情感递进自然。",
+      "issues": "存在多处拼写和语法错误，如towed、badness、desiring eyes等，影响阅读流畅性。",
+      "specific_corrections": [
+        {
+          "wrong": "towed",
+          "right": "lowered"
+        },
+        {
+          "wrong": "badness",
+          "right": "sadness"
+        },
+        {
+          "wrong": "a desiring eyes",
+          "right": "longing eyes"
+        }
+      ]
+    },
+    {
+      "paragraph_index": 2,
+      "summary": "描写比赛过程与结局，突出坚持与感动，结尾升华主题。",
+      "issues": "时态混乱，如ran hardly；拼写错误如frintament；结尾句式简单。",
+      "specific_corrections": [
+        {
+          "wrong": "ran hardly",
+          "right": "ran hard"
+        },
+        {
+          "wrong": "frintament",
+          "right": "gaze"
+        },
+        {
+          "wrong": "appreciated tears",
+          "right": "grateful tears"
+        }
+      ]
+    }
+  ],
+  "material_reuse_guide": {
+    "applicable_themes": [
+      {
+        "theme": "坚持与勇气",
+        "description": "可用于描写克服困难、挑战自我类话题，如'Never Give Up'或'The Power of Perseverance'。"
+      },
+      {
+        "theme": "友谊与鼓励",
+        "description": "适用于表达人与人之间支持与信任的主题，如'A Friend in Need'。"
+      }
+    ],
+    "processing_direction": "可将David的故事改编为励志演讲稿或记叙文，强调内在力量与外部支持的结合。",
+    "expansion_ideas": "可加入更多环境描写（如天气、观众反应）或心理活动（如David的内心独白），增强感染力。"
+  },
+  "revised_text": "We sat down next to each other, but David wouldn’t look at me. He lowered his head, filled with sadness, and stared at the track and field with longing eyes. I walked forward, gently patted his shoulder, and said in a soft tone, 'Why not give it a try? I know your potential, and you’re truly remarkable. I believe you can finish it.' David’s face lit up instantly, his signature wide grin breaking through the clouds of doubt. Without hesitation, he decided to join the race, following his heart despite knowing he might not win. He signed up and joined the other runners at the starting line.\n\nI watched as David moved into position. His eyes, brimming with confidence and light, were fixed firmly on the finish line. I shouted encouragement, my voice cutting through the crowd: 'Come on! You’ve got this!' The race began. Though many runners passed him, he ran hard, sweat pouring down his face, refusing to give up. When he finally crossed the finish line, he walked toward me, embracing me tightly, tears of gratitude streaming down his cheeks. That moment taught both of us that nothing is impossible—and we would never forget it."
+}

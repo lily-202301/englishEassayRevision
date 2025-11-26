@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DeepSeek Stress Tester</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-900 text-white p-10 font-mono">
+    <div class="max-w-2xl mx-auto space-y-6">
+        <h1 class="text-3xl font-bold text-blue-400">DeepSeek 压测终端</h1>
+        
+        <!-- 配置区域 -->
+        <div class="bg-gray-800 p-4 rounded-lg space-y-4">
+            <div>
+                <label class="block text-sm text-gray-400 mb-1">服务器地址 (Server URL)</label>
+                <!-- 注意：这里不需要加 /docs，只要 IP:端口 -->
+                <input type="text" id="serverUrl" value="http://119.45.187.169:8000" class="w-full bg-gray-900 border border-gray-700 rounded px-3 py-2 text-white">
+            </div>
+            <div class="grid grid-cols-2 gap-4">
+                <input type="text" id="username" placeholder="用户名" class="bg-gray-900 border border-gray-700 rounded px-3 py-2 text-white">
+                <input type="password" id="password" placeholder="密码" class="bg-gray-900 border border-gray-700 rounded px-3 py-2 text-white">
+            </div>
+            <button onclick="login()" class="w-full bg-blue-600 hover:bg-blue-500 py-2 rounded font-bold transition-colors">1. 登录 (Login)</button>
+            <div id="statusMsg" class="text-xs text-center min-h-[1.5em]"></div>
+        </div>
+
+        <!-- 聊天区域 -->
+        <div class="bg-gray-800 p-4 rounded-lg space-y-4">
+            <div id="chatBox" class="h-64 bg-gray-900 rounded p-4 overflow-y-auto space-y-2 border border-gray-700 text-sm">
+                <div class="text-gray-500 text-center italic">Ready...</div>
+            </div>
+            <div class="flex gap-2">
+                <input type="text" id="msgInput" class="flex-1 bg-gray-900 border border-gray-700 rounded px-3 py-2 text-white" placeholder="输入消息...">
+                <button onclick="sendMsg()" class="bg-green-600 px-6 rounded font-bold hover:bg-green-500">发送</button>
+            </div>
+        </div>
+
+        <!-- 压力测试 -->
+        <div class="bg-gray-800 p-4 rounded-lg border border-red-900/50">
+            <h3 class="text-red-400 font-bold mb-2">🚀 并发测试区</h3>
+            <button onclick="bombard()" class="w-full bg-red-600 hover:bg-red-500 py-3 rounded font-bold flex justify-center items-center gap-2 transition-colors">
+                <span>模拟 20 人同时提问</span>
+            </button>
+            <pre id="stressLog" class="mt-4 text-[10px] text-gray-400 h-32 overflow-y-auto bg-black p-2 rounded border border-gray-800"></pre>
+        </div>
+    </div>
+
+    <script>
+        let token = '';
+        let sessionId = null;
+
+        function getUrl() {
+            // 去掉末尾的斜杠
+            return document.getElementById('serverUrl').value.replace(/\/$/, "");
+        }
+
+        function setStatus(msg, type) {
+            const el = document.getElementById('statusMsg');
+            el.innerText = msg;
+            el.className = "text-xs text-center min-h-[1.5em] " + (type === 'error' ? 'text-red-500' : 'text-green-400');
+        }
+
+        function logChat(role, text) {
+            const box = document.getElementById('chatBox');
+            // 使用最原始的字符串拼接，防止转义错误
+            let colorClass = 'text-left text-green-300';
+            if (role === 'You') colorClass = 'text-right text-blue-300';
+            if (role === 'Error') colorClass = 'text-center text-red-500';
+
+            const html = '<div class="' + colorClass + '"><strong>' + role + ':</strong> ' + text + '</div>';
+            box.innerHTML += html;
+            box.scrollTop = box.scrollHeight;
+        }
+
+        async function login() {
+            const u = document.getElementById('username').value;
+            const p = document.getElementById('password').value;
+            if(!u || !p) return setStatus("请输入用户名和密码", "error");
+
+            setStatus("登录中...", "normal");
+            
+            const formData = new URLSearchParams();
+            formData.append('username', u);
+            formData.append('password', p);
+
+            try {
+                const res = await fetch(getUrl() + '/token', {
+                    method: 'POST',
+                    body: formData,
+                    headers: {'Content-Type': 'application/x-www-form-urlencoded'}
+                });
+                const data = await res.json();
+                
+                if(data.access_token) {
+                    token = data.access_token;
+                    setStatus("登录成功！正在创建会话...", "success");
+                    await initSession();
+                } else {
+                    setStatus("登录失败: " + JSON.stringify(data), "error");
+                }
+            } catch(e) { 
+                setStatus("网络错误: " + e, "error"); 
+            }
+        }
+
+        async function initSession() {
+            try {
+                const res = await fetch(getUrl() + '/sessions', {
+                    method: 'POST',
+                    headers: {'Authorization': 'Bearer ' + token, 'Content-Type': 'application/json'},
+                    body: JSON.stringify({title: "Web Client Session"})
+                });
+                const data = await res.json();
+                if(data.id) {
+                    sessionId = data.id;
+                    setStatus("会话已建立 (ID: " + sessionId + ")。可以开始聊天了！", "success");
+                    logChat("System", "Session Ready.");
+                } else {
+                    setStatus("创建会话失败", "error");
+                }
+            } catch(e) {
+                setStatus("会话错误: " + e, "error");
+            }
+        }
+
+        async function sendMsg() {
+            const msgInput = document.getElementById('msgInput');
+            const msg = msgInput.value;
+            if(!msg || !sessionId) return;
+            
+            logChat("You", msg);
+            msgInput.value = '';
+
+            try {
+                const res = await fetch(getUrl() + '/sessions/' + sessionId + '/chat', {
+                    method: 'POST',
+                    headers: {'Authorization': 'Bearer ' + token, 'Content-Type': 'application/json'},
+                    body: JSON.stringify({message: msg})
+                });
+                const data = await res.json();
+                
+                if (data.detail) {
+                     logChat("Error", typeof data.detail === 'string' ? data.detail : JSON.stringify(data.detail));
+                } else {
+                     // data.reply 应该包含 "Task Queued: xxx"
+                     logChat("Bot", data.reply); 
+                }
+            } catch(e) {
+                logChat("Error", e);
+            }
+        }
+
+        async function bombard() {
+            if(!sessionId) return alert("请先登录并创建会话！");
+            
+            const log = document.getElementById('stressLog');
+            log.innerText = "🚀 开始 20 并发轰炸...\n";
+            
+            const requests = [];
+            for(let i=1; i<=20; i++) {
+                // 每一个请求都是独立的异步操作
+                const req = fetch(getUrl() + '/sessions/' + sessionId + '/chat', {
+                    method: 'POST',
+                    headers: {'Authorization': 'Bearer ' + token, 'Content-Type': 'application/json'},
+                    body: JSON.stringify({message: "Stress Test Message #" + i})
+                })
+                .then(res => res.json())
+                .then(data => {
+                    const reply = data.reply || JSON.stringify(data);
+                    log.innerText += "请求 " + i + " 响应: " + reply + "\n";
+                })
+                .catch(err => {
+                    log.innerText += "请求 " + i + " 失败: " + err + "\n";
+                });
+                
+                requests.push(req);
+            }
+            
+            await Promise.all(requests);
+            log.innerText += "✅ 所有请求已发送至 Redis 队列！\n请观察服务器后台日志看处理过程。";
+        }
+    </script>
+</body>
+</html>

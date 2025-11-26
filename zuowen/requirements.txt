@@ -1,0 +1,10 @@
+flask
+dirtyjson
+celery
+redis
+openai
+python-dotenv
+fastapi
+uvicorn[standard]
+python-multipart
+

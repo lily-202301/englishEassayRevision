@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>英语作文批改报告</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              serif: ['"Noto Serif SC"', 'Merriweather', 'Georgia', 'serif'],
+              sans: ['Inter', 'system-ui', 'sans-serif'],
+            },
+            colors: {
+              paper: '#fdfbf7',
+              ink: '#2d3748',
+              accent: '#c53030', 
+              improve: '#3182ce', 
+              highlight: '#d97706', 
+            },
+            boxShadow: {
+              'paper': '0 1px 3px rgba(0,0,0,0.05), 0 1px 2px rgba(0,0,0,0.1)',
+              'card': '0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03)',
+            }
+          },
+        },
+      }
+    </script>
+    <!-- Google Fonts including Noto Serif SC for Chinese premium feel -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Merriweather:wght@300;400;700&family=Noto+Serif+SC:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+      body {
+        background-color: #f3f4f6; /* Light gray for web view background */
+        font-family: 'Inter', sans-serif;
+        -webkit-font-smoothing: antialiased;
+      }
+      
+      /* Print Optimization */
+      @media print {
+        body {
+          background-color: white;
+        }
+        @page {
+          margin: 15mm;
+          size: A4;
+        }
+        .no-print {
+          display: none !important;
+        }
+        .print-break-inside-avoid {
+          break-inside: avoid;
+        }
+        .print-break-before {
+          break-before: page;
+        }
+        /* Force background colors to print */
+        * {
+          -webkit-print-color-adjust: exact !important;
+          print-color-adjust: exact !important;
+        }
+      }
+
+      /* Custom scrollbar hidden for cleaner UI */
+      .custom-scroll::-webkit-scrollbar {
+        display: none;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "recharts": "https://aistudiocdn.com/recharts@^3.4.1",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.554.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
