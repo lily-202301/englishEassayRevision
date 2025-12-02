@@ -1,0 +1,19 @@
+{
+  "watch": [
+    "server.js",
+    "routes",
+    "controllers",
+    "models",
+    "config"
+  ],
+    "ignore": [
+    "uploads/**",
+    "test-client/**",
+    "node_modules/**",
+    "runs/**",
+    "logs/**",
+    "*.log",
+    "*.tmp"
+    ],
+    "ext": "js,json"
+    }
