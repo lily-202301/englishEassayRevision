@@ -9,7 +9,7 @@ from openai import OpenAI
 # ==========================================
 client = OpenAI(
     # ⚠️ 请确认此处填入的是有效的 API Key
-    api_key="sk-c1a452ab4ec14d42ba9dfc629ff0463d",
+    api_key="sk-f59450beabe14db1a1cb66ffe213cdb6",
     base_url="https://dashscope.aliyuncs.com/compatible-mode/v1",
 )
 

@@ -1,0 +1,23 @@
+{
+  "name": "wechat-essay-backend",
+  "version": "1.0.0",
+  "description": "WeChat mini program backend for user management, points and auth",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js",
+    "smoke": "node scripts/smokeTest.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "jsonwebtoken": "^9.0.2",
+    "mysql2": "^3.9.7",
+    "sequelize": "^6.37.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.4",
+    "sqlite3": "^5.1.7"
+  }
+}
